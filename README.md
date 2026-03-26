@@ -55,6 +55,8 @@ src/
 
 * `POST /deposit` → Deposit money
 * `POST /withdraw` → Withdraw money
+* POST /transfer → Transfer money to another account
+* GET /transactions/{accountId} → Get transaction history
 
 ---
 
