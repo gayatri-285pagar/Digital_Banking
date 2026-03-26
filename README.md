@@ -37,27 +37,37 @@ src/
  ├── model/         → Entity classes
  └── resources/     → application.properties
 ```
-
 ---
 
 ## 🔗 API Endpoints
+---
 
 ### 👤 User APIs
 
-* `POST /register` → Register new user
-* `POST /login` → User login
+* `POST /register` → Register a new user
+* `POST /login` → User login authentication
+---
 
 ### 🏦 Account APIs
 
+* `POST /account/create` → Create a new bank account
 * `GET /account/{id}` → Get account details
+* `GET /account/balance/{id}` → Check account balance
+---
 
 ### 💸 Transaction APIs
 
-* `POST /deposit` → Deposit money
-* `POST /withdraw` → Withdraw money
-* POST /transfer → Transfer money to another account
-* GET /transactions/{accountId} → Get transaction history
+* `POST /deposit` → Deposit money into account
+* `POST /withdraw` → Withdraw money from account
+* `POST /transfer` → Transfer money between accounts
+* `GET /transactions/{accountId}` → View transaction history
+---
 
+### 👨‍💼 Admin APIs
+
+* `GET /admin/users` → Get all users
+* `GET /admin/accounts` → Get all accounts
+---
 ---
 
 ## ⚙️ How to Run the Project
