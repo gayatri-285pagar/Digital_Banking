@@ -1,18 +1,106 @@
-# Digital Banking System
+# 💳 Digital Banking System
 
-## Features
-- User Registration & Login
-- Account Management
-- Transaction Handling
+## 📌 Project Overview
 
-## Tech Stack
-- Java
-- Spring Boot
-- MySQL
-- REST API
+The Digital Banking System is a backend application developed using Spring Boot that allows users to perform basic banking operations such as registration, login, account management, and transactions.
+This project demonstrates REST API development, database integration, and layered architecture (Controller, Service, Repository).
 
-## How to Run
-1. Clone the project
-2. Open in STS / IntelliJ
-3. Configure database in application.properties
-4. Run the application
+---
+
+## 🚀 Features
+
+* 👤 User Registration
+* 🔐 User Login Authentication
+* 🏦 Account Management (Create / View Account)
+* 💸 Transaction Handling (Deposit / Withdraw)
+* 📊 Data stored and managed using MySQL database
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Java
+* **Framework:** Spring Boot
+* **Database:** MySQL
+* **Architecture:** REST API
+* **Build Tool:** Maven
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── controller/    → Handles API requests
+ ├── service/       → Contains business logic
+ ├── repository/    → Handles database operations
+ ├── model/         → Entity classes
+ └── resources/     → application.properties
+```
+
+---
+
+## 🔗 API Endpoints
+
+### 👤 User APIs
+
+* `POST /register` → Register new user
+* `POST /login` → User login
+
+### 🏦 Account APIs
+
+* `GET /account/{id}` → Get account details
+
+### 💸 Transaction APIs
+
+* `POST /deposit` → Deposit money
+* `POST /withdraw` → Withdraw money
+
+---
+
+## ⚙️ How to Run the Project
+
+1. Clone the repository
+2. Open the project in STS / IntelliJ
+3. Configure database in `application.properties`:
+
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/bank
+spring.datasource.username=root
+spring.datasource.password=your_password
+```
+
+4. Run the Spring Boot application
+5. Use Postman to test APIs
+
+---
+
+## 🔐 Security Note
+
+Sensitive files like `application.properties` are excluded using `.gitignore` to protect database credentials.
+An example configuration file is provided for reference.
+
+---
+
+## 🎯 Learning Outcomes
+
+* Learned Spring Boot REST API development
+* Understood layered architecture (Controller-Service-Repository)
+* Gained experience in MySQL database integration
+* Practiced Git & GitHub for version control
+
+---
+
+## 📸 Future Improvements
+
+* Add JWT Authentication 🔐
+* Integrate frontend using React ⚛️
+* Add validation and exception handling
+* Deploy project on cloud (AWS / Render)
+
+---
+
+## 👩‍💻 Author
+
+**Gayatri Pagar**
+Java | Spring Boot Developer
